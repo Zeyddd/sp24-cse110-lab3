@@ -12,9 +12,9 @@
 h1 {
     /* set main color */
     color: var(--main-color); /* main color */
-    color: #8b008b; /* backup color */
+    color: #04f83d; /* backup color */
     /* modify the text */
-    color: rgb(114, 21, 165);
+    color: rgb(43, 0, 255);
     text-align: center;
     text-decoration: underline;
     /* create a box around it */
@@ -25,11 +25,17 @@ h1 {
     border-width: 0.1em;
     border-radius: 10pt;
     min-width: 50%;
+    position: static;
+}
+
+/* h3 changes */
+h3{
+    position: relative;
 }
 
 /* body and header text */
 body, header {
-    color: hsl(228, 79%, 37%); /* text color */
+    color: hsl(280, 83%, 49%); /* text color */
     text-align: left; /* left-aligned text */
 }
 
@@ -45,15 +51,43 @@ body, header {
 
 /* input text color */
 input[type="text"] {
-    color: green;
+    color: rgb(206, 249, 30);
 }
 
 /* button hover color */
 button:hover {
-    color: blue;
+    color: rgb(255, 0, 43);
 }
 
 /* fallback */
 :root {
     --main-color: lightblue;
 }
+
+/* form active */
+.form:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+/* flexbox */
+#agenda {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+}
+
+/* grid */
+#wtdn {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+    justify-content:space-around;
+}
+
+/* media responsivness */
+@media (max-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+  }
