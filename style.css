@@ -74,7 +74,6 @@ button:hover {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-
 }
 
 /* grid */
@@ -90,10 +89,55 @@ button:hover {
     body {
         font-size: 20px;
     }
-  }
+}
 
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* fonts to elements */
 body {
     font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
 }
+
+/* attribute selector */
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+/* selector list */
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+/* child Combinator */
+.form > input {
+    margin-bottom: 10px;
+}
+
+/* general sibling combinator */
+h1 ~ p {
+    font-style: italic;
+}
+
+/* adjacent sibling combinator */
+h1 + p {
+    font-weight: bold;
+}
+
+/* combining selectors */
+h1.important {
+    color: red;
+}
+
+/* :has() */
+h1:has(span) {
+    background-color: yellow;
+}
+
+/* bested selectors */
+.form {
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
