@@ -61,7 +61,7 @@ button:hover {
 
 /* fallback */
 :root {
-    --main-color: lightblue;
+    --main-color: rgb(16, 239, 83);
 }
 
 /* form active */
@@ -91,3 +91,9 @@ button:hover {
         font-size: 20px;
     }
   }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
