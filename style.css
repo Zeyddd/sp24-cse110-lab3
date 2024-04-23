@@ -1,3 +1,6 @@
+/* import google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* generic background color */
 * {
     background-color: #efeaea; 
@@ -90,9 +93,6 @@ button:hover {
         font-size: 20px;
     }
 }
-
-/* import google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* fonts to elements */
 body {
