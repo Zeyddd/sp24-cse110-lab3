@@ -1,1 +1,42 @@
-/* fill in css
+/* generic background color */
+* {
+    background-color: #efeaea; /* whatever, background */
+}
+
+/* form color setting */
+.form {
+    color: color(display-p3 0 0 0); /* form text color */
+}
+
+/* title color change */
+h1 {
+    /* set main color */
+    color: var(--main-color); /* main color */
+    color: #8b008b; /* backup color */
+}
+
+/* body and header text */
+body, header {
+    color: hsl(228, 79%, 37%); /* body/header text */
+    text-align: left; /* left-aligned text */
+}
+
+/* attendance border style */
+#attendence {
+    border-color: blue; /* blue border */
+}
+
+/* h3 heading color */
+body  h3 {
+    color: color-mix(in lch, rgb(37, 37, 111), rgb(178, 178, 118)); /* mix of colors */
+}
+
+/* horizontal lines color */
+section ~  hr {
+    border-color: var(--main-color); /* main color border */
+}
+
+/* form label color */
+label.form {
+    color: black; /* classic black */
+}
