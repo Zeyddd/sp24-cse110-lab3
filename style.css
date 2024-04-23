@@ -91,7 +91,7 @@ button:hover {
     }
 }
 
-/* Import Google Font */
+/* import google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* fonts to elements */
@@ -134,7 +134,7 @@ h1:has(span) {
     background-color: yellow;
 }
 
-/* bested selectors */
+/* nested selectors */
 .form {
     &:hover {
         background-color: lightgray;
