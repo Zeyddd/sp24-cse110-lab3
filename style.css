@@ -1,42 +1,93 @@
 /* generic background color */
 * {
-    background-color: #efeaea; /* whatever, background */
+    background-color: #efeaea; 
 }
 
 /* form color setting */
 .form {
-    color: color(display-p3 0 0 0); /* form text color */
+    color: color(display-p3 0 0 0); 
 }
 
 /* title color change */
 h1 {
     /* set main color */
     color: var(--main-color); /* main color */
-    color: #8b008b; /* backup color */
+    color: #04f83d; /* backup color */
+    /* modify the text */
+    color: rgb(43, 0, 255);
+    text-align: center;
+    text-decoration: underline;
+    /* create a box around it */
+    margin: auto;
+    padding: 0.5in;
+    border-style: groove;
+    border-color: var(--main-color);
+    border-width: 0.1em;
+    border-radius: 10pt;
+    min-width: 50%;
+    position: static;
+}
+
+/* h3 changes */
+h3{
+    position: relative;
 }
 
 /* body and header text */
 body, header {
-    color: hsl(228, 79%, 37%); /* body/header text */
+    color: hsl(280, 83%, 49%); /* text color */
     text-align: left; /* left-aligned text */
 }
 
-/* attendance border style */
-#attendence {
-    border-color: blue; /* blue border */
+/* grid display */
+#roles {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+    column-gap: 20px;
+    row-gap: 15px;
+    justify-content: space-around;
 }
 
-/* h3 heading color */
-body  h3 {
-    color: color-mix(in lch, rgb(37, 37, 111), rgb(178, 178, 118)); /* mix of colors */
+/* input text color */
+input[type="text"] {
+    color: rgb(206, 249, 30);
 }
 
-/* horizontal lines color */
-section ~  hr {
-    border-color: var(--main-color); /* main color border */
+/* button hover color */
+button:hover {
+    color: rgb(255, 0, 43);
 }
 
-/* form label color */
-label.form {
-    color: black; /* classic black */
+/* fallback */
+:root {
+    --main-color: lightblue;
 }
+
+/* form active */
+.form:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+/* flexbox */
+#agenda {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+}
+
+/* grid */
+#wtdn {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+    justify-content:space-around;
+}
+
+/* media responsivness */
+@media (max-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+  }
